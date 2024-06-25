@@ -3,7 +3,8 @@
 .header {
     width: 1052px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    place-content: center;
     margin-top: 92px;
     margin-left: auto;
     margin-right: auto;
@@ -11,12 +12,12 @@
 }
 
 .header__menu {
-    display: flex;
+    align-self: center;
 }
 
 .header__menu_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: circle;
 }
@@ -25,17 +26,25 @@
     margin-right: 25px;
 }
 
+.no-bullit {
+    list-style: none;
+}
+
 .header__logo {
-    justify-self: start;
+    display: block;
 }
 
 .header__logo-image {
     width: 148px;
     height: 105px;
+    
 }
 
 .header__address {
+    width: 200px;
+    margin-right: 50px;
     justify-self: end;
+    align-self: center;
 }
 
  /* Первая секция */ 
